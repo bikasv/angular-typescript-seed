@@ -1,0 +1,27 @@
+{
+  "name": "AngularProjectSeed",
+  "version": "0.1.0",
+  "authors": [
+    "Bikas Vaibhav <bikasvaibhav@gmail.com>"
+  ],
+  "description": "Seed Project to kick start any app",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "homepage": "http://bikasv.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "*",
+    "angular-ui-router": "*",
+    "angular-sanitize": "*"
+  }
+}

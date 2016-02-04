@@ -1,0 +1,14 @@
+.ui-dashboard {
+    margin-top: 50px;
+    padding: 0 0 0 20px;
+}
+
+.ui-card {
+    float: left;
+    box-sizing: border-box;
+    width: calc(33.33% - 15px);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px #ddd;
+    padding: 15px;
+    margin: 0 10px 10px 0;
+}
