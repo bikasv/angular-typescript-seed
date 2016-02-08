@@ -4,7 +4,7 @@
   "description": "Seed Project to kick start any app",
   "main": "index.js",
   "scripts": {
-    "postinstall": "bower update && tsd install"
+    "postinstall": "bower update && tsd update -so"
   },
   "author": "Bikas Vaibhav <bikasvaibhav@gmail.com>",
   "private": true,

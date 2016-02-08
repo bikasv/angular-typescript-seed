@@ -5,21 +5,14 @@ module app.dashboard {
     'use strict';
 
 
-    // ----- directiveFunction -----
+    // ----- componentOptions -----
 
-    function directiveFunction(): ng.IDirective {
-
-        let directive = {
-            restrict: 'E',
-            templateUrl: 'components/dashboard/dashboard.html',
-            scope: {
-            },
-            controller: 'DashboardController',
-            controllerAs: 'vm'
-        };
-
-        return directive;
-    }
+    let componentOptions: ng.IComponentOptions = {
+        restrict: 'E',
+        bindings: {},
+        templateUrl: 'components/dashboard/dashboard.html',
+        controller: 'DashboardController as vm'
+    };
 
 
     // ----- ControllerFunction -----
@@ -47,7 +40,7 @@ module app.dashboard {
     };
 
     angular.module('app.dashboard')
-        .directive('tmplDashboard', directiveFunction)
+        .component('tmplDashboard', componentOptions)
         .controller('DashboardController', ControllerFunction);
 
 };

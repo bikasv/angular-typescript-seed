@@ -3,8 +3,6 @@
 module app.core {
     'use strict';
 
-    'use strict';
-
     // Application configuration values
     let config = {
         appErrorPrefix: '[Angular Template Error] ',

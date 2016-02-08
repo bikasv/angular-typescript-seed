@@ -4,21 +4,13 @@ module app.topnav {
     'use strict';
 
 
-    // ----- directiveFunction -----
+    // ----- componentOptions -----
 
-    function directiveFunction(): ng.IDirective {
-
-        let directive = {
-            restrict: 'E',
-            templateUrl: 'components/topnav/topnav.html',
-            scope: {
-            },
-            controller: 'TopnavController',
-            controllerAs: 'vm'
-        };
-
-        return directive;
-    }
+    let componentOptions: ng.IComponentOptions = {
+        restrict: 'E',
+        templateUrl: 'components/topnav/topnav.html',
+        controller: 'TopnavController as vm'
+    };
 
     // ----- ControllerFunction -----
 
@@ -33,7 +25,7 @@ module app.topnav {
 
     angular
         .module('app.topnav')
-        .directive('tmplTopnav', directiveFunction)
+        .component('tmplTopnav', componentOptions)
         .controller('TopnavController', ControllerFunction);
 
 };
