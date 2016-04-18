@@ -1,14 +1,14 @@
 <section id="portfolio-view" class="ui-dashboard">
 
     <div class="ui-card" ng-repeat="entry in vm.users">
-        <label>{{entry.user.name.first | uppercase}} {{entry.user.name.last | uppercase}}</label>
+        <label>{{entry.name.first | uppercase}} {{entry.name.last | uppercase}}</label>
 
         <div>
-            <img src="{{entry.user.picture.medium}}" alt="User Image">
+            <img src="{{entry.picture.medium}}" alt="User Image">
         </div>
 
-        <div>{{entry.user.gender}}</div>
-        <div><a href="mailto:{{entry.user.email}}">{{entry.user.email}}</a></div>
+        <div>{{entry.gender}}</div>
+        <div><a href="mailto:{{entry.user.email}}">{{entry.email}}</a></div>
     </div>
 
 </section>

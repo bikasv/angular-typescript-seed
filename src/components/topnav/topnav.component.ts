@@ -7,7 +7,6 @@ module app.topnav {
     // ----- componentOptions -----
 
     let componentOptions: ng.IComponentOptions = {
-        restrict: 'E',
         templateUrl: 'components/topnav/topnav.html',
         controller: 'TopnavController as vm'
     };

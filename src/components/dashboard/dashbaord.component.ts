@@ -8,7 +8,6 @@ module app.dashboard {
     // ----- componentOptions -----
 
     let componentOptions: ng.IComponentOptions = {
-        restrict: 'E',
         bindings: {},
         templateUrl: 'components/dashboard/dashboard.html',
         controller: 'DashboardController as vm'

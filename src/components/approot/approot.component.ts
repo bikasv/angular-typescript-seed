@@ -7,7 +7,6 @@ module app.approot {
     // ----- componentOptions -----
 
     let componentOptions: ng.IComponentOptions = {
-        restrict: 'E',
         templateUrl: 'components/approot/approot.html'
     };
 
